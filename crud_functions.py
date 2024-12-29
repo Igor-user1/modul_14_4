@@ -12,7 +12,7 @@ def initiate_db(title, description, price):
     price INT NOT NULL)
     """)
 
-    cursor.execute("""INSERT INTO Users (title, description, price)
+    cursor.execute("""INSERT INTO Products (title, description, price)
     VALUES (?, ?, ?)""", (title, description, price))
 
     connection.commit()
