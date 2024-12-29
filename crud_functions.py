@@ -5,7 +5,7 @@ def initiate_db(title, description, price):
     connection = sqlite3.connect("Products.db")
     cursor = connection.cursor()
 
-    cursor.execute("""CREATE TABLE IF NOT EXISTS Users(
+    cursor.execute("""CREATE TABLE IF NOT EXISTS Products(
     id INTEGER PRIMARY KEY,
     title TEXT NOT NULL,
     description TEXT,
